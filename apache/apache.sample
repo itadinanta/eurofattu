@@ -1,0 +1,14 @@
+NameVirtualHost *
+
+<VirtualHost *>
+	ServerName fattu.local
+	DocumentRoot /home/fattu/web
+	ServerAdmin nicola@localhost
+	php_admin_value include_path "/home/fattu/lib:/home/fattu/conf"
+	php_admin_flag safe_mode off
+	RewriteEngine On
+	RewriteRule "^(.*)/([0-9]*)$" /index.php?MENUID=$2&SPATH=$1 [L] 
+	RewriteRule "^(.*)/([0-9]*)_(.*)$" /index.php?MENUID=$2&SPATH=$1&$3 [L]
+	RewriteRule "^(.*)/btn_(.*)\.png$" /image.php?BUTTONID=$2 [L]
+	RewriteRule "^(.*)/mnu_(.*)\.png$" /image.php?MENUID=$2 [L]
+</VirtualHost>

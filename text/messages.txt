@@ -1,0 +1,210 @@
+#
+#  
+#
+M_BLANK_ENTITY=&nbsp;
+M_ELEMENT_BLANK=<TD COLSPAN=%s CLASS=blank>&nbsp;</TD>
+M_ELEMENT_BR=<BR>
+M_ELEMENT_BUTTON=<TD COLSPAN=%s CLASS=button><INPUT TYPE=submit CLASS=button NAME="%s" VALUE="%s"></TD>
+M_ELEMENT_CHECKBOX=<TD COLSPAN=%s CLASS=input><INPUT TYPE=checkbox NAME="%s" VALUE="%s" %s>%s</INPUT>
+M_ELEMENT_CHECKED=CHECKED
+M_ELEMENT_GBUTTON=<TD COLSPAN=%s CLASS=button><INPUT TYPE=image SRC="%s" CLASS=gbutton NAME="%s" VALUE="%s"></TD>
+M_ELEMENT_GENERIC=<TD COLSPAN=%s CLASS="%s">%s</TD>
+M_ELEMENT_HIDDEN=<INPUT TYPE=HIDDEN NAME="%s" VALUE="%s">
+M_ELEMENT_INPUT=<TD COLSPAN=%s CLASS=input><INPUT TYPE=INPUT CLASS=input NAME="%s" VALUE="%s" SIZE=%s MAXLENGTH=%s></TD>
+M_ELEMENT_LABEL=<TD COLSPAN=1 CLASS=label>%s</TD>
+M_ELEMENT_LINK=<A HREF="/%s_%s" class="auto">%s</A>
+M_ELEMENT_LINK_NOPAR=<A HREF="/%s" class="auto">%s</A>
+M_ELEMENT_NULLOPTION=-
+M_ELEMENT_OPTION=<OPTION VALUE="%s" %s>%s</OPTION>
+M_ELEMENT_PASSWORD=<TD COLSPAN=%s CLASS=input><INPUT TYPE=PASSWORD CLASS=input NAME="%s" VALUE="%s" SIZE=%s MAXLENGTH=%s></TD>
+M_ELEMENT_RADIOBOX=<TD COLSPAN=%s CLASS=input><INPUT TYPE=radiobox NAME="%s" VALUE="%s" %s>%s</INPUT>
+M_ELEMENT_RADIOBOX_ITEM=<INPUT TYPE=radiobox NAME="%s" VALUE="%s" %s>%s</INPUT>
+M_ELEMENT_RAW_BUTTON=<INPUT TYPE=submit CLASS=button NAME="%s" VALUE="%s">
+M_ELEMENT_RAW_GBUTTON=<INPUT TYPE=image SRC="%s" CLASS=gbutton NAME="%s" VALUE="%s">
+M_ELEMENT_RAW_SELECT=<SELECT TYPE="select" CLASS="select" NAME="%s">%s</SELECT>
+M_ELEMENT_SELECT=<TD COLSPAN=%s CLASS=select><SELECT TYPE=select CLASS=select NAME="%s">%s</SELECT></TD>
+M_ELEMENT_SELECTED=SELECTED
+M_ELEMENT_SELECT_ITEM=<OPTION VALUE="%s" %s>%s</OPTION>
+M_ELEMENT_STATIC=<TD COLSPAN=%s CLASS=statictext>%s</TD>
+M_ELEMENT_TEXTAREA=<TD COLSPAN=%s CLASS=input><TEXTAREA CLASS=input NAME="%s" COLS=%s ROWS=%s>%s</TEXTAREA></TD>
+M_ELEMENT_TITLE1=<TD COLSPAN=%s CLASS=formtitle1>%s</TD>
+M_ELEMENT_TITLE2=<TD COLSPAN=%s CLASS=formtitle2>%s</TD>
+M_ELEMENT_TITLE3=<TD COLSPAN=%s CLASS=formtitle3>%s</TD>
+M_ELEMENT_TITLE4=<TD COLSPAN=%s CLASS=formtitle4>%s</TD>
+M_ELEMENT_TITLE5=<TD COLSPAN=%s CLASS=formtitle5>%s</TD>
+M_ELEMENT_UNCHECKED=
+M_ELEMENT_UNSELECTED=
+M_FORM_BEGIN=<DIV ALIGN=CENTER><FORM ACTION="%s" METHOD="%s"><TABLE CELLPADDING=2 CELLSPACING=0 BORDER=0></DIV>
+M_FORM_END=</TABLE></FORM>
+M_FORM_ROW_BEGIN=<TR>
+M_FORM_ROW_END=</TR>
+M_MENUBAR_FORMAT=<TABLE BORDER=0 CELLPADDING=2 CELLSPACING=2 CLASS="menubar"><TR>%s</TR></TABLE>
+M_MENUBAR_ITEM_FORMAT=<TD CLASS="menubaritem" id=mark%s><A HREF="/%s">%s</A></TD>
+M_MENUBAR_ROOT_FORMAT=<TD CLASS="menubarroot" id=mark%s><A HREF="/%s">%s</A></TD>
+M_SIDEBAR_FORMAT=<TABLE BORDER=0 WIDTH="100%%" CELLPADDING=0 CELLSPACING=0>%s</TABLE>
+M_SIDEBAR_ITEM_FORMAT=<TR><TD CLASS="bar%s" ID=mark%s><A HREF="/%s">%s</A></TD></TR>
+M_TABLE_BEGIN=<DIV ALIGN=CENTER><TABLE>
+M_TABLE_DIV_FORMAT=<TD>%s</TD>
+M_TABLE_END=</TABLE></DIV>
+M_TABLE_HDIV_FORMAT=<TD>%s</TD>
+M_TABLE_HROW_FORMAT=<TR CLASS="dochead">%s</TR>
+M_TABLE_ROW_FORMAT=<TR>%s</TR>
+#
+M_USERNAME=Nome utente
+M_USERDATA=Utente <b>%s</b> (%s)
+M_PASSWORD=Password
+#
+M_BANCA=Banca
+M_CAP=CAP
+M_CELLULARE=Cellulare
+M_CODICE=Codice
+M_CODICEFISCALE=Codice fiscale
+M_COGNOME=Cognome
+M_CONTO=Numero di Conto
+M_DATIBANCA=Riferimento banca
+M_EMAIL=Email
+M_FAX=Fax
+M_FILIALE=Filiale
+M_INDIRIZZO=Indirizzo
+M_LOCALITA=Localit&agrave;
+M_NOME=Nome
+M_PARTITAIVA=P. IVA
+M_PROV=Provincia
+M_RAGSOC=Ragione Sociale
+M_SEDEAMMINISTRATIVA=Sede amministrativa
+M_SEDELEGALE=Sede legale
+M_TEL=Telefono
+M_WEB=Sito Web
+#
+B_CONFIRM=Conferma
+B_DELETE=Cancella
+B_CANCEL=Annulla
+B_NEXT=Avanti
+B_PREV=Indietro
+B_LOGIN=Entra
+#
+M_NEWDOC=Creazione %s
+M_DOCNEW=Nuovo documento
+M_DOCOPEN=Vai
+M_NUMBERDOC=%s n.%s/%s
+M_NEXTDOC=<IMG BORDER=0 SRC="/img/next_small.png" ALT="Successivo">
+M_PREVDOC=<IMG BORDER=0 SRC="/img/prev_small.png" ALT="Precedente">
+#
+M_DOCH_NPROG=N.
+M_DOCH_SUBNUM=
+M_DOCH_DATAEMISSIONE=Data
+M_DOCH_CLIENTE=Cliente
+M_DOCH_FORNITORE=Fornitore
+M_DOCH_DESCRIZIONE=Descrizione
+M_DOCH_TOTALE=Totale
+M_DOCH_DOCPOINTER=D
+#
+M_DOC_DATA=Data
+M_DOC_CLIENTE=Cliente
+M_DOC_FORNITORE=Fornitore
+M_DOC_DESCRIZIONE=Oggetto
+M_DOC_ROWS=Contenuto del documento
+#
+M_ITEM_SUMMARY=Sommario
+M_ITEM_TAXABLE=Imponibile
+M_ITEM_TAX=IVA
+M_ITEM_TOTAL=Totale
+M_ITEM_MOVETO=Sposta in
+M_ITEM_DELETE=Elimina
+M_ITEMDESCR=Descrizione
+M_ITEMREF=Rif. Art.
+M_ITEMQUANTITY=Quantit&agrave;
+M_ITEMPRICEUNIT=Prezzo x1
+M_ITEMDESCRIPTION=Descrizione
+M_ITEMVAT=IVA %
+M_ITEMCATEGORY=Categoria
+M_ITEMUNIT=Unit&agrave;
+M_ITEMNAME=Articolo
+M_ITEMCONSUMABLE=Consumabile
+M_ITEMPROVIDER=Fornitore
+M_ITEMPROVIDERCODE=Codice fornitore
+M_ITEMPROVIDERDISCOUNT=Sconto %
+#
+M_COURTESYTITLE=Spett.le
+M_PVATCODE=Partita IVA
+M_PTAXPAYERCODE=Codice fiscale
+M_PITEMDESCR=Descrizione
+M_PITEMTAXABLE=Imponibile
+M_PITEMREF=Rif. Art.
+M_PITEMQUANTITY=Quantit\`a
+M_PITEMPRICEUNIT=Prezzo x1
+M_PITEMDESCRIPTION=Descrizione
+M_PITEMVAT=IVA
+M_PITEMUNIT=Unit\`a
+M_PITEMNOTES=Note
+M_PITEMTOTAL=Totale
+M_PTOTAL=Totale
+#
+M_CLICK_TO_DOWNLOAD_PDF=Formato PDF
+M_CLICK_TO_DOWNLOAD_PS=Formato Postscript
+M_CURRENCY=&euro;
+M_DOC_CHARGES=Oneri a carico
+M_DOC_ITEM=Riga n. %s
+M_DOC_NEWITEM=Nuova riga
+M_DOC_NOTES=Annotazioni
+M_DOC_PAYMENT=Tipo pagamento
+M_DOC_ROW_PATTERN=<TR class=docrow><TD>%s</TD><TD><b>%s</b><br>%s</TD><TD>%s %s</TD><TD id=money>%s</TD><TD id=money>%s</TD><TD id=money>%s</TD><TD id=money>%s</TD></TR>
+M_DOC_SAVED=Il record &egrave; stato salvato
+M_DOC_SUMMARY=Sommario
+M_DOC_TAX=IVA
+M_DOC_TAXABLE=Imponibile
+M_DOC_TOTAL=Totale
+M_FMT_CURR=%.2lf
+M_FMT_DATE=d/m/Y
+M_FMT_VAT=%.1lf%%
+M_MAIL_ADDRESS=<DIV class=mailaddress>Spett.le<BR><b>%s</b><BR>%s<BR>%s %s (%s)<BR>%s<BR>%s<BR>%s</DIV>
+M_PRINTERFRIENDLY=<A HREF="/%s%sPR=1" TARGET="_BLANK"><IMG SRC="/img/printerhp.png" alt="Print" BORDER=0></A>
+#
+M_HT_ABI=ABI
+M_HT_ARTICOLO=Articolo
+M_HT_CAB=CAB
+M_HT_CATEGORIA=Categoria
+M_HT_CATEGORIADESCR=Categoria
+M_HT_CODICE=Codice
+M_HT_CODICECATEGORIA=Codice categoria
+M_HT_CODICEFISCALE=Codice fiscale
+M_HT_DESCRIZIONE=Descrizione
+M_HT_FORNITORE=Fornitore
+M_HT_PARTITAIVA=Partita IVA
+M_HT_RAGSOC=Ragione Sociale
+M_HT_USERID=UserID
+M_HT_USERNAME=Nome Utente
+#
+M_TABLEOPEN=Vai
+M_DELETED=Record cancellato
+M_CONFIRM_DELETION=Conferma cancellazione
+#
+M_NO=No
+M_YES=Sì
+#
+M_CONFIRMLOGOUT=Confermi l'uscita dalla sessione?
+M_LOGGEDOUT=Il sistema &egrave; pronto per una nuova sessione.
+#
+M_USERID=UserID: %s
+M_USERNEW=Nuovo utente
+M_USERNAME=Nome utente
+M_USERPASSWORD=Password
+M_USERDESCRIPTION=Descrizione
+M_USERCONFIRMPASSWORD=Conferma password
+M_USERPERMISSIONS=Permessi
+M_USERPERM_W_FATTURE=Scrivi fatture
+M_USERPERM_R_FATTURE=Leggi fatture
+M_USERPERM_W_PREVENTIVI=Scrivi preventivi
+M_USERPERM_R_PREVENTIVI=Leggi preventivi
+M_USERPERM_W_ANAGRAFICA=Scrivi anagrafica
+M_USERPERM_R_ANAGRAFICA=Leggi anagrafica
+M_USERPERM_W_UTENTI=Scrivi utenti
+M_USERPERM_R_UTENTI=Leggi utenti
+#
+M_ABI=Cod. ABI
+M_CAB=Cod. CAB
+M_CIN=CIN
+#
+ERR_USEREXISTS=L'utente <b>%s</b> esiste gi&agrave, utilizzare un altro userid
+ERR_PASSWORDEMPTY=La password &egrave; obbligatoria
+ERR_PASSWORDCONFIRM=La password non corrisponde con la password di conferma

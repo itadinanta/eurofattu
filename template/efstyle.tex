@@ -1,0 +1,161 @@
+\newlength{\efsizelogo}\setlength\efsizelogo{1in}
+\newlength{\efsizefirmhead}\setlength\efsizefirmhead{10cm}
+\newlength{\efsizedescription}\setlength\efsizedescription{6cm}
+\newlength{\efsizepagewidth}\setlength\efsizepagewidth{21cm}
+\newlength{\efsizepageheight}\setlength\efsizepageheight{29.7cm}
+\newlength{\efsizeheadseparator}\setlength\efsizeheadseparator{1.0cm}
+\newlength{\efsizefootseparator}\setlength\efsizefootseparator{1.5cm}
+\newlength{\efsizeheader}\setlength{\efsizeheader}{1in}
+\newlength{\efsizefooter}\setlength{\efsizefooter}{1.5cm}
+\newlength{\eflmargin}\setlength{\eflmargin}{0.7cm}
+\newlength{\efrmargin}\setlength{\efrmargin}{0.7cm}
+\newlength{\eftmargin}\setlength{\eftmargin}{0.5cm}
+\newlength{\efbmargin}\setlength{\efbmargin}{0.5cm}
+\newlength{\eftrule}\setlength{\eftrule}{0.5pt}
+
+\newcounter{nextpage}\def\nextpageset{\setcounter{nextpage}{\value{page}}\addtocounter{nextpage}{1}}
+\newcommand\effontstyle\sffamily
+\newcounter{eftablerownumber}
+\newcommand\efsignatures{
+  \par
+  \vfill
+  \noindent\hfil\parbox{7cm}{\dotfill}\hskip 2cm\parbox{7cm}{\dotfill}\hfil\par
+  \vfill
+  }
+
+
+\newcommand\effirmheading {
+\begin{minipage}[l]{\efsizelogo}
+  \includegraphics{logo.eps}
+\end{minipage}
+\begin{minipage}[l]{\efsizefirmhead}
+  \effontstyle
+  \effirm \\
+  \efaddress \\
+  \efvatcode\ \eftaxpayer
+\end{minipage}
+}
+
+\newlength{\eftextwidth}
+\setlength{\eftextwidth}{\efsizepagewidth}
+\addtolength{\eftextwidth}{-\eflmargin}
+\addtolength{\eftextwidth}{-\efrmargin}
+\newlength{\eftextheight}
+\setlength{\eftextheight}{\efsizepageheight}
+\addtolength{\eftextheight}{-\eftmargin}
+\addtolength{\eftextheight}{-\efbmargin}
+\addtolength{\eftextheight}{-\efsizeheadseparator}
+\addtolength{\eftextheight}{-\efsizefootseparator}
+\addtolength{\eftextheight}{-\efsizefooter}
+\addtolength{\eftextheight}{-\efsizeheader}
+
+\newcommand\effirmfooting {
+  \effontstyle\footnotesize
+  \begin{tabular}{llclr} 
+    \hline
+    \effirm & \eftaxpayer& \eflegaladdress & \efphone & \efwebaddress \\
+    \efaddresshort & \efvatcode & \efoperatingaddress & \effax & \efmailaddress \\
+  \end{tabular} 
+  }
+
+\newcommand\efspaceholder{9\ 999\ 999.00}
+\newcommand\eftablebegin[3] {
+  \setlength{\tabcolsep}{0.25em}
+  \setcounter{eftablerownumber}{0}
+  \begin{longtable} {|r|p{\efsizedescription}|r|l|r|r|lr|r|}
+    \multicolumn{9}{c}{\efdocnumber\efcontinued} \\
+    \hline & \textbf{\efheaddescription} & \efheadquantity & \efheadunit & \efheadunitprice & \efheadtaxable & & \efheadvat & \efheadtotal \\
+    \# & \efheadnotes & & & \efcurr & \efcurr & & \efcurr & \efcurr \\ \hline \hline \endhead
+    \hline & \textbf{\efheaddescription} & \efheadquantity & \efheadunit & \efheadunitprice & \efheadtaxable & & \efheadvat & \efheadtotal \\
+    \# & \efheadnotes & & & \efcurr & \efcurr & & \efcurr & \efcurr \\ \hline \hline \endfirsthead
+    & & 9\ 999.00 & XXXXX & \efspaceholder & \efspaceholder & 99.9 & 9\ 999.00 & \efspaceholder \kill
+    \hline\multicolumn{9}{c}{\efdocnumber\efcontinue} \\ \endfoot
+    \hline\multicolumn{5}{|l|}{\textbf{\effoottotal}} & \textbf{#1} & & \textbf{#2} & \textbf{#3} \\ \hline \endlastfoot
+    }
+
+\newcommand\eftablerow[9] {
+  \hline
+  \addtocounter{eftablerownumber}{1}
+  \theeftablerownumber & \textbf{#1}#9 & #2 & #3 & #4 & #5 & #6 & #7 &#8\\
+  }
+
+\newcommand\eftableend {
+\end{longtable}
+}
+
+\newcommand\efbegindoc {
+  \documentclass[10pt,italian,onecolumn,oneside,xdvi,a4paper]{article}
+  \usepackage{indentfirst}
+  \usepackage{afterpage}
+  \usepackage{longtable}
+  \usepackage{babel}
+  \usepackage{latexsym}
+  \usepackage{fancyhdr}
+  \usepackage{color}
+  \usepackage{graphicx}
+  \usepackage{float}
+  \usepackage{floatflt}
+  \usepackage{tabularx}
+  
+  %%-----------------------------------------------------------------------------
+  %% Layout
+  %%-----------------------------------------------------------------------------
+
+  \setlength{\paperheight}{\efsizepageheight}
+  \setlength{\voffset}{-1in}\addtolength{\voffset}{\eftmargin}
+  \renewcommand{\headrulewidth}{\eftrule}
+  \setlength{\topmargin}{0pt}
+  \setlength{\headheight}{\efsizeheader}
+  \setlength{\headsep}{\efsizeheadseparator}
+  \setlength{\textheight}{\eftextheight}
+  \setlength{\footskip}{\efsizefootseparator}
+
+  \setlength{\paperwidth}{\efsizepagewidth}
+  \setlength{\hoffset}{-1in}\addtolength{\hoffset}{\eflmargin}
+  \oddsidemargin 0mm
+  \evensidemargin 0mm
+  \setlength{\textwidth}{\eftextwidth}
+  \setlength{\marginparwidth}{\eflmargin}
+  \setlength{\marginparsep}{0mm}
+
+  
+  \renewcommand{\textfraction}{0.01}
+  \renewcommand{\topfraction}{0.95}
+  \renewcommand{\bottomfraction}{0.95}
+  \renewcommand{\floatpagefraction}{0.7}
+  \setcounter{totalnumber}{8}
+  \setcounter{LTchunksize}{50}
+  %%-----------------------------------------------------------------------------
+  %% Head/Foot
+  %%-----------------------------------------------------------------------------
+  %% \advance\marginparpush 3cm
+
+  \pagestyle{fancy}
+  \fancyhead{}
+  \fancyfoot{}
+  \fancyhead[L]{\effirmheading}
+  \fancyfoot[C]{\effirmfooting}
+  \fancyfoot[R]{\thepage/\pageref{endofdoc}}
+
+  \sloppy
+  \begin{document}
+  \effontstyle
+  \noindent\parbox[b]{\efsizedescription}{\effontstyle\efdocheading}
+  \noindent\hfill\parbox[t]{\efsizedescription}{\effontstyle \efdestination}
+  \par
+  \vspace{2cm}
+  \efsubject
+  \bigskip
+  }
+
+\newcommand\efenddoc{
+\efnotes
+\efpayments
+\efsignatures
+\label{endofdoc}
+\end{document}
+}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "test.tex"
+%%% End: 

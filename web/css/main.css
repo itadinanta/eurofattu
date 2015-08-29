@@ -1,0 +1,96 @@
+HTML  
+	{font-size: 12px}
+BODY  
+	{background-color: #606f6f; font-family: "Verdana", "Arial", "Helvetica", sans-serif; font-size: 12px}
+BODY.printer
+	{background-color: white; font-family: "Arial","Helvetica",sans-serif}
+TABLE 
+	{background-color: white; font-size: 12px}
+TD
+	{vertical-align: top}
+TD.pagetop
+	{background-color: #606f6f; color: white; text-align: center}
+TD.midbar
+	{background-color: white; color: red; text-align: center}
+TD.pagebottom
+	{background-color: black; color: white; text-align: center}
+TD#left.pagebottom
+	{text-align: left}
+TD#right.pagebottom
+	{text-align: right}
+TD.menubar
+	{border-width: 1px; border-style: none; border-color: black}
+TD.upright
+	{text-align: right; vertical-align:top}
+TABLE.FORM TD#TITLE
+	{border-width: 1px; border-style: none; border-color: black}
+TD.bar1
+	{font-weight:bold; text-align: center; border-color:black; width: 100%}
+TD.bar2
+	{padding-left:0em;font-size: 10px}
+TD.bar3
+	{padding-left:0.5em;font-size: 10px}
+TD.menubarroot
+	{font-size: 10px; font-weight:bold; border-style: solid; border-width: 1px;
+	padding-left: 0.5em; padding-right: 0.5em; padding-top: 1px; padding-bottom: 1px}
+TD.menubaritem
+	{font-size: 10px;  border-style: solid; border-width: 1px;
+	padding-left: 0.5em; padding-right: 0.5em; padding-top: 1px; padding-bottom: 1px}
+#mark2
+	{background-color: yellow; border-width:1px; border-style: solid}
+#mark1
+	{background-color: lightyellow}
+#mark
+	{background-color: white}
+TD.label
+	{background-color: #f0f0f0; text-align:right; vertical-align: middle}
+TD.input
+	{background-color: #f0f0f0; vertical-align: middle}
+TD.blank
+	{background-color: #f0f0f0}
+TD.select
+	{background-color: #f0f0f0; vertical-align: middle}
+TD.pagestatusbar
+	{background-color: #f0f0f0; text-weight:bold; align: right}
+INPUT
+	{background-color: #f0fff0; font-family: "Courier New", Courier, monospaced; font-weight: bold; 
+	font-size: 12px; border: 1px; border-style: none none solid none; border-color: black}
+
+TEXTAREA
+	{background-color: #f0fff0; font-family: "Courier New", Courier, monospaced; font-weight: bold; 
+	font-size: 12px; border: 1px; border-style: none none none solid; border-color: black}
+
+INPUT.button
+	{background-color: #ff8080; border-style: solid none solid none; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+SELECT.select
+	{background-color: #f0fff0; font-family: "Courier New", Courier, monospaced; font-weight: bold; 
+	font-size: 12px; border: 1px; border-style: none none solid none; border-color: black}
+
+A:visited
+	{color: navy; text-decoration: none}
+A:link
+	{color: navy; text-decoration: none}
+A:hover
+	{color: white; background-color:black; text-decoration: none}
+TD.buttonbar
+	{text-align: right; background-color: white}
+TD.formtitle1
+	{color: black; background-color:white; font-size:16px; font-weight:bold;
+	border-style: solid none solid none; border-width: 1px; border-color: black}
+TD.formtitle2
+	{color: black; background-color:white; font-size:14px; font-weight:bold}
+TD.statictext
+	{font-weight: bold; background-color: #f0f0f0; vertical-align: middle}
+TR.dochead TD, TD.dochead
+	{color: black; background-color:white; font-size:14px; font-weight:bold;
+	border-style: solid none solid none; border-width: 1px; border-color: black}
+TR.docrow TD, TD.docrow
+	{color: black; background-color:#f0f0f0}
+TD#money
+	{text-align: right}
+TR.docfoot TD, TD.docfoot
+	{color: darkred; background-color:white; font-size:14px; font-weight:bold;
+	border-style: solid none solid none; border-width: 1px; border-color: black}
+DIV.paragraph 
+	{text-align: justify}
